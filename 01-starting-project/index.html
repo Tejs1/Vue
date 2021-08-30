@@ -13,7 +13,11 @@
         <input type="text" id="goal" v-model="enteredValue" />
         <button v-on:click="addGoals">Add Goal</button>
       </div>
-      <ul></ul>
+      <ul>
+        <!-- v-for use to replicate items -->
+        <!-- {{}} used to output -->
+        <li v-for="goal in goals">{{goal}}</li>
+      </ul>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="app.js"></script>
