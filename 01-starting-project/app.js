@@ -14,4 +14,11 @@
 // creating vue app
 Vue.createApp({
   //configure
+  //pices of data view is aware of:
+  data() {
+    return {
+      goals: [],
+      enteredValue: "",
+    };
+  },
 });
