@@ -25,6 +25,7 @@ Vue.createApp({
   methods: {
     addGoals() {
       this.goals.push(this.enteredValue);
+      this.enteredValue="";
     },
   },
-});
+}).mount('#app');
